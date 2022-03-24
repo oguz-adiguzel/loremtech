@@ -1,0 +1,549 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+          font-family: 'Open Sans', sans-serif;
+        }
+        .carousel-height{
+            height: 30rem;
+        }
+        .carousel-color{
+          background-color: rgb(253, 252, 250);
+        }
+        .main-bg1{
+          background-image: url('./img/bg1.png');
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+        .services{
+          background-image: url('./img/header.jpg');
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-image:linear-gradient(to right bottom, rgba(68, 29, 211, 0.822), rgba(0, 4, 255, 0.192)), url('/img/header.jpg');
+          height: 85vh;
+        }
+        .circle{
+          width: 6.5rem;
+          height: 6.5rem;
+        }
+        i{
+          color: rgb(68, 29, 211);
+        }
+        .card{
+          background-color: ghostwhite;
+        }
+        .card-item{
+          background-color: rgba(68, 29, 211, 0.849);
+        }
+        .card-img{
+          height: 15rem;
+        }
+        .form-bg{
+          background-color: rgba(68, 29, 211, 0.808);
+        }
+        .content{
+          height: 250vh;
+          
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          background-image:linear-gradient(to right bottom, rgba(0, 0, 0, 0.863), rgba(0, 0, 0, 0.5)), url('/img/bg2.png');
+          background-attachment: fixed;
+        }
+        .content-item1{
+          background-color: rgba(77, 37, 221, 0.849);
+        }
+        iframe{
+          height: 20rem;
+        }
+        .social{
+          width: 4rem;
+          height: 4rem;
+          background-color: white;
+        }
+        .social:hover{
+          background-color: #ccc;
+          cursor: pointer;
+        }
+    </style>
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light  ">
+        <div class="container">
+            <div>
+                <a class="navbar-brand" href="#">
+                    <img src="./img/3857ab1c8d1447688f7684f932d35f1b_Small.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+          
+          <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active text-primary fw-bold " aria-current="page" href="#hakkımızda">HAKKIMIZDA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-primary fw-bold " href="#servislerimiz">SERVİSLERİMİZ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-primary fw-bold" href="#ürünler">ÜRÜNLER</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-primary fw-bold" href="#hemensiparis">HEMEN SİPARİŞ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-primary fw-bold" href="#ödemekanalları">ÖDEME KANALLARI</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-primary fw-bold" href="#iletisim">İLETİŞİM</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+     <div class="container-fluid carousel-color">
+        <div id="carouselExampleIndicators" class="carousel slide w-75 m-auto " data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-6 d-flex flex-column justify-content-center align-items-center carousel-height">
+                        <h3 class="text-primary fs-3 fw-bold">MACBOOK</h3>
+                        <p class="fs-4">Uygun fiyat avantajları ve teknik hizmet desteği ile Lorem Tech'de.. </p>
+                        
+                    </div>
+                    <div class="col-6 d-flex align-items-center justify-content-center carousel-height">
+                        <img class="w-100" src="./img/macbook.png" alt="">
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                    <div class="col-6 d-flex flex-column justify-content-center align-items-center carousel-height">
+                        <h3 class="text-primary fs-3 fw-bold">IPAD</h3>
+                        <p class="fs-4">Uygun fiyat avantajları ve teknik hizmet desteği ile Lorem Tech'de.. </p>
+                    </div>
+                    <div class="col-6 d-flex align-items-center justify-content-center">
+                        <img class="w-100" src="./img/ıpad.png" alt="">
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                    <div class="col-6 d-flex flex-column justify-content-center align-items-center  carousel-height">
+                        <h3 class="text-primary fs-3 fw-bold">IPHONE</h3>
+                        <p class="fs-4">Uygun fiyat avantajları ve teknik hizmet desteği ile Lorem Tech'de.. </p>
+                    </div>
+                    <div class="col-6 d-flex align-items-center justify-content-center">
+                        <img class="w-75 h-75" src="./img/iphone.png" alt="">
+                    </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+     </div>
+
+     <div id="hakkımızda" class="container-fluid vh-100 border">
+       <div class="row">
+         <div class="col-6 main-bg1 vh-100">
+
+         </div>
+         <div class="col-6 d-flex flex-column justify-content-center align-items-center">
+            <h3 class="text-primary fw-bold mx-5 ">Lorem, Ipsum Dolor.</h3>
+            <p class="mx-5 lh-lg">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+         </div>
+       </div>
+     </div>
+
+     <div id="servislerimiz" class="container-fluid  services">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 mb-5 d-flex flex-column justify-content-center align-items-center mt-5">
+           <h1 class="text-light fw-bold">Servislerimiz</h1>
+           <p class="text-light fw-bold">Ürün ve Hizmetlerinden Bahsedin!</p>
+          </div>
+          <div class="col-4 d-flex flex-column justify-content-center align-items-center">
+             <div class=" rounded-circle bg-light circle d-flex justify-content-center align-items-center ">
+                <i class="fa-brands fa-apple fs-1"></i>
+             </div>
+             <h5 class="text-light fw-bold mt-4">Satış Hizmeti</h5>
+             <p class="text-light text-center">Bu kısma ürün için bir açıklama veya sağladığınız hizmetl hakkında küçük bir tanıtım içeriği yazabilirsiniz.</p>
+          </div>
+          <div class="col-4 d-flex flex-column justify-content-center align-items-center">
+             <div class=" rounded-circle bg-light circle d-flex justify-content-center align-items-center">
+                <i class="fa-brands fa-apple fs-1"></i>
+             </div>
+             <h5 class="text-light fw-bold mt-4">Satış Hizmeti</h5>
+             <p class="text-light text-center">Bu kısma ürün için bir açıklama veya sağladığınız hizmetl hakkında küçük bir tanıtım içeriği yazabilirsiniz.</p>
+          </div>
+          <div class="col-4 d-flex flex-column justify-content-center align-items-center">
+             <div class=" rounded-circle bg-light circle d-flex justify-content-center align-items-center">
+                <i class="fa-brands fa-apple fs-1"></i>
+             </div>
+             <h5 class="text-light fw-bold mt-4">Satış Hizmeti</h5>
+             <p class="text-light text-center">Bu kısma ürün için bir açıklama veya sağladığınız hizmetl hakkında küçük bir tanıtım içeriği yazabilirsiniz.</p>
+          </div>
+        </div>
+      </div>
+      </div> 
+    
+    <div id="ürünler" class="container-fluid my-5">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="text-center text-primary fw-bold border-bottom">Ürünler</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="container vh-100">
+      <div class="row d-flex justify-content-center">
+        
+        <div class="col-3  card ">
+          <div class="container-fluid card-item rounded-3 ">
+            <h4 class="text-center py-4 text-light fw-bold">IPHONE 11</h4>
+          </div>
+            
+          <div class="container-fluid d-flex justify-content-center card-img">
+            <img class="w-100" src="./img/ıp11.png" alt="">
+          </div>
+          <div class="container-fluid mt-5">
+            <h1 style="font-size: 3rem;" class="text-center text-primary fw-bold">11800 ₺</h1>
+            <p style="font-size: .6rem;" class="text-center text-primary">TAAHHÜTSÜZ</p>
+          </div>
+          <div class="container-fluid mt-4">
+            <p class="text-center text-primary">Taksitli Ödeme İmkanı</p>
+            <p class="text-center text-primary">2 Yıl Garanti</p>
+            <p class="text-center text-primary">15 Gün İade İmkanı</p>
+            <p class="text-center text-primary">%100 Orijinal</p>
+          </div>
+        </div>
+        
+        
+        
+        <div class="col-3  card">
+          <div class="container-fluid card-item rounded-3">
+            <h4 class="text-center py-4 text-light fw-bold">MACBOOK AİR</h4>
+          </div>
+            
+          <div class="container-fluid d-flex justify-content-center card-img " >
+            <img class="w-100 " src="./img/mb.png" alt="">
+          </div>
+          <div class="container-fluid mt-5">
+            <h1 style="font-size: 3rem;" class="text-center text-primary fw-bold">17900 ₺</h1>
+            <p style="font-size: .6rem;" class="text-center text-primary">TAAHHÜTSÜZ</p>
+          </div>
+          <div class="container-fluid mt-4">
+            <p class="text-center text-primary">Taksitli Ödeme İmkanı</p>
+            <p class="text-center text-primary">2 Yıl Garanti</p>
+            <p class="text-center text-primary">15 Gün İade İmkanı</p>
+            <p class="text-center text-primary">%100 Orijinal</p>
+          </div>
+        </div>
+        <div class="col-3  card ">
+          <div class="container-fluid card-item rounded-3">
+            <h4 class="text-center py-4 text-light fw-bold">IPAD PRO</h4>
+          </div>
+            
+          <div class="container-fluid d-flex justify-content-center card-img " >
+            <img class="w-100  " src="./img/ıp.png" alt="">
+          </div>
+          <div class="container-fluid mt-5">
+            <h1 style="font-size: 3rem;" class="text-center text-primary fw-bold">13900 ₺</h1>
+            <p style="font-size: .6rem;" class="text-center text-primary">TAAHHÜTSÜZ</p>
+          </div>
+          <div class="container-fluid mt-4">
+            <p class="text-center text-primary">Taksitli Ödeme İmkanı</p>
+            <p class="text-center text-primary">2 Yıl Garanti</p>
+            <p class="text-center text-primary">15 Gün İade İmkanı</p>
+            <p class="text-center text-primary">%100 Orijinal</p>
+          </div>
+        </div>
+        <div class="col-3  card ">
+          <div class="container-fluid card-item rounded-3">
+            <h4 class="text-center py-4 text-light fw-bold">APPLE WATCH</h4>
+          </div>
+            
+          <div class="container-fluid d-flex justify-content-center card-img " >
+            <img class="w-100  " src="./img/aw.png" alt="">
+          </div>
+          <div class="container-fluid mt-5">
+            <h1 style="font-size: 3rem;" class="text-center text-primary fw-bold">6799 ₺</h1>
+            <p style="font-size: .6rem;" class="text-center text-primary">TAAHHÜTSÜZ</p>
+          </div>
+          <div class="container-fluid mt-4">
+            <p class="text-center text-primary">Taksitli Ödeme İmkanı</p>
+            <p class="text-center text-primary">2 Yıl Garanti</p>
+            <p class="text-center text-primary">15 Gün İade İmkanı</p>
+            <p class="text-center text-primary">%100 Orijinal</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="hemensiparis" class="container-fluid form-bg">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="text-center fw-bold py-5 text-light border-bottom" >Hemen Sipariş</h1>
+        </div>
+      </div>
+     
+      <form class="w-50 m-auto py-5">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label text-light">Firma İsmi</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text text-warning">Firma İsminizi Giriniz</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label text-light">Yetkili Adı</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text text-warning">Yetkili Adını Giriniz</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label text-light">Telefon</label>
+          <input type="tel" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text text-warning">Telefon Numaranızı Giriniz</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label text-light">E-posta</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text text-warning">E-posta Adresinizi Giriniz</div>
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label text-light" for="exampleCheck1">Okudum kabul ediyorum</label>
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Hemen Sipariş Ver</button>
+      </form>
+    </div>
+  
+    <div id="ödemekanalları" class="container-fluid content">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <h1 class="text-center fw-bold py-5 text-light border-bottom" >Ödeme Kanalları</h1>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row d-flex justify-content-center">
+            <div class="col-3  d-flex flex-column align-items-center">
+              <i class="fa-solid fa-building-columns text-light fs-1 my-5"></i>
+              <h5 class="text-light text-center">GARANTİ BANKASI</h5>
+              <p class="text-light text-center mt-3">Lorem Tech</p>
+              <p class="text-light text-center">TR570000000000000000000000</p>
+              <p class="text-light text-center"> <strong class="me-3">Şube</strong>411</p>
+              <p class="text-light text-center"> <strong class="me-3">Hesap No</strong>0001982</p>
+            </div>
+            <div class="col-3  d-flex flex-column align-items-center">
+              <i class="fa-solid fa-building-columns text-light fs-1 my-5"></i>
+              <h5 class="text-light text-center">YAPI KREDİ BANKASI</h5>
+              <p class="text-light text-center mt-3">Lorem Tech</p>
+              <p class="text-light text-center">TR570000000000000000000000</p>
+              <p class="text-light text-center"> <strong class="me-3">Şube</strong>6710</p>
+              <p class="text-light text-center"> <strong class="me-3">Hesap No</strong>5706710</p>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid content-item1 mt-5">
+          <div class="row d-flex p-1 justify-content-center ">
+            <div class="col-2 border-end mx-1 d-flex flex-column align-items-center">
+              <i class="fa-solid fa-money-bill text-light fs-3 mt-4"></i>
+              <p class="text-light mb-4 mt-3">Nakit Ödeme</p>
+            </div>
+            <div class="col-2 border-end mx-1 d-flex flex-column align-items-center">
+              <i class="fa-regular fa-credit-card text-light fs-3 mt-4"></i>
+              <p class="text-light mb-4 mt-3">Kredi Kartı</p>
+            </div>
+            <div class="col-2 border-end mx-1 d-flex flex-column align-items-center">
+              <i class="fa-solid fa-building-columns text-light fs-3 mt-4"></i>
+              <p class="text-light mb-4 mt-3">EFT/Havale</p>
+            </div>
+            <div class="col-2 border-end mx-1 d-flex flex-column align-items-center">
+              <i class="fa-solid fa-money-bill text-light fs-3 mt-4"></i>
+              <p class="text-light mb-4 mt-3">Kapıda Nakit Ödeme</p>
+            </div>
+            <div class="col-2  mx-1 d-flex flex-column align-items-center">
+              <i class="fa-regular fa-credit-card text-light fs-3 mt-4"></i>
+              <p class="text-light mb-4 mt-3">Kapıda Kredi Kartı</p>
+            </div>
+          </div>
+        </div>
+        <div id="iletisim" class="container-fluid mt-5">
+          <div class="row">
+            <div class="col-12">
+              <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.3270066885793!2d28.767771315415043!3d41.03997747929764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa42813ff7217%3A0xcaa766605d5d6617!2sDumankaya%20Konsept!5e0!3m2!1str!2str!4v1647425798657!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid mt-5 d-flex justify-content-center pt-4">
+          <div class="row">
+            <div class="col-1 border social border rounded-circle d-flex justify-content-center align-items-center mx-2">
+               <a href="https://www.facebook.com/loremtekno" target="_blanck">
+                  <i class="fa-brands fa-facebook fs-4 text-secondary"></i>
+               </a> 
+            </div>
+            <div class="col-1 border social border rounded-circle d-flex justify-content-center align-items-center mx-2">
+              <a href="https://twitter.com/loremtekno" target="_blanck">
+                <i class="fa-brands fa-twitter fs-4 text-secondary"></i>
+              </a>
+            </div>
+           <div class="col-1 border social border rounded-circle d-flex justify-content-center align-items-center mx-2">
+              <a href="https://www.instagram.com/loremtekno/" target="_blanck">
+                <i class="fa-brands fa-instagram fs-4 text-secondary"></i>
+              </a>
+            </div>
+            <div class="col-1 border social border rounded-circle d-flex justify-content-center align-items-center mx-2">
+              <a href="https://www.youtube.com/c/loremtekno" target="_blanck">
+                <i class="fa-brands fa-youtube fs-4 text-secondary"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div  class="container-fluid mt-5">
+          <div class="row d-flex justify-content-center">
+            <div class="col-3 text-light mx-2">
+              <h4 class="mt-2">İletişim Formu</h4>
+              <form class="mt-5">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">İsim</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Soyisim</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">E-posta</label>
+                  <input type="email" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Telefon</label>
+                  <input type="tel" class="form-control" id="exampleInputPassword1">
+                </div>
+                <button type="submit" class="btn btn-primary">Gönder</button>
+              </form>
+            </div>
+            <div class="col-3 text-light  mx-2">
+              <h4 class="mt-2">Ulaşım Bilgileri</h4>
+              <div class="d-flex mt-5">
+                <i class="fa-solid fa-location-dot text-light fs-5"></i>
+                <p class="fw-bold ms-2">ADRES</p>
+              </div>
+              <p>Örnek Mah. Örnek Sk. 123 İSTANBUL Türkiye</p>
+              <div class="d-flex mt-5">
+                <i class="fa-solid fa-phone text-light fs-5"></i>
+                <p class="fw-bold ms-2">TELEFON</p>
+              </div>
+              <p>+08 (000) 000 00 0</p>
+              <P>+08 (000) 000 00 1</P>
+              <div class="d-flex mt-5">
+                <i class="fa-solid fa-envelope text-light fs-5"></i>
+                <p class="fw-bold ms-2">E-POSTA</p>
+              </div>
+              <p>info@loremtekno</p>
+              
+            </div>
+            
+            <div class="col-3 text-light  mx-2">
+              <h4 class="mt-2">Çalışma Saatleri</h4>
+              <div class="d-flex justify-content-between mt-5">
+                <p>Pazartesi</p>
+                <p>09:00 - 18:00</p>
+              </div>
+              <div class="d-flex justify-content-between">
+                <p>Salı</p>
+                <p>09:00 - 18:00</p>
+              </div>
+              <div class="d-flex justify-content-between">
+                <p>Çarşamba</p>
+                <p>09:00 - 18:00</p>
+              </div>
+              <div class="d-flex justify-content-between">
+                <p>Perşembe</p>
+                <p>09:00 - 18:00</p>
+              </div>
+              <div class="d-flex justify-content-between">
+                <p>Cuma</p>
+                <p>09:00 - 18:00</p>
+              </div>
+              <div class="d-flex justify-content-between">
+                <p>Cumartesi</p>
+                <p>KAPALI</p>
+              </div>
+              <div class="d-flex justify-content-between">
+                <p>Pazar</p>
+                <p>KAPALI</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark py-5 ">
+      <div class="container ">
+         
+        
+        <div class="collapse navbar-collapse d-flex justify-content-start" id="navbarNavDropdown">
+          <ul class="navbar-nav ">
+            <li class="nav-item">
+              <a class="nav-link active text-primary text-light  " aria-current="page" href="#">HAKKIMIZDA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary text-light" href="#">SERVİSLERİMİZ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary text-light" href="#">ÜRÜNLER</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary text-light" href="#">HEMEN SİPARİŞ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary text-light" href="#">ÖDEME KANALLARI</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary text-light" href="#">İLETİŞİM</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mt-3">
+          <p class="text-light fw-bold">© 2010 LOREM TEKNOLOJI</p>
+        </div>
+      </div>
+    </nav>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+   
+  </body>
+</html>
